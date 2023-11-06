@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salmon Cookies Stand</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link href="style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>Sales Data by Location</h1>
+      <nav>
+        <ul><img src="salmon.jpg" alt="image of a salmon" />
+          <li class="navigation"><a href="index.html">Home</a></li>
+          <li class="navigation"><a href="sales.html">Sales</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form id="addLocationForm">
+        <div id="form">
+        <fieldset>
+          <legend>Add a new store to the table!</legend>
+          <label
+            >Location Name:
+            <input name="name" type="text" required maxlength="10" size="8" />
+          </label>
+
+          <label
+            >Minimum Customers Per Hour:
+            <input name="minCustomers" type="number" min="0" max="1000" />
+          </label>
+          <label
+            >Maximum Customers Per Hour:
+            <input name="maxCustomers" type="number" min="0" max="1000" />
+          </label>
+          <label
+            >Average Cookies Per Sale:
+            <input
+              name="avgCookies"
+              type="text"
+              id="floatInput"
+              pattern="[0-5]+(\.[0-5]+)?"
+              required
+              maxlength="4"
+              size="3"
+            />
+          </label>
+          <button type="submit">Click here to add!</button>
+        </fieldset>
+
+      </form>
+    </div>
+      <div id="locationSales"></div>
+    </main>
+  </body>
+  <footer>&copy;2023 Dominique's Salmon Cookies INC.</footer>
+  <script src="app.js"></script>
+  <img src="nations.jpeg" alt="image of nations" /><img src="nations.jpeg" alt="image of nations" /><img src="nations.jpeg" alt="image of nations" />
+</html>
